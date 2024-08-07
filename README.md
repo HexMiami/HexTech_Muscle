@@ -32,7 +32,7 @@ Whether you're a beginner or an experienced engineer, HexTech provides the tools
 
 ## Connecting power, motors, and other peripherals 
 
-1. Use the provided 2.5mm tip screwdriver to loosen the screw.
+1. Use the provided 2.4 mm tip screwdriver to loosen the screw.
 
   
 2. Insert the cable into the terminal block.
