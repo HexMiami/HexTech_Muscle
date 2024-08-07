@@ -9,7 +9,6 @@ Welcome to the HexTech Circuit Board User Manual. This guide will help you get s
 - [Connecting power, motors, and other peripherals](#connecting-power,-motors,-and-other-peripherals)
 - [Installation](#installation)
 - [Using the HexTech Library](#using-the-hextech-library)
-- [Connecting to MQTT](#connecting-to-mqtt)
 - [Programming with HexTech](#programming-with-hextech)
 - [Example Projects](#example-projects)
 - [Troubleshooting](#troubleshooting)
