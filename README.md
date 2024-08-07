@@ -39,7 +39,7 @@ Whether you're a beginner or an experienced engineer, HexTech provides the tools
 
    
 3. Tighten the screw securely with the screwdriver.
-<img width="1115" alt="Screenshot 2024-08-07 at 10 22 27 AM" src="https://github.com/user-attachments/assets/ebc2a1ba-05fb-4bf7-8a38-ea0fc72c9b06">
+
 
 
 
