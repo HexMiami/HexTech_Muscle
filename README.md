@@ -29,6 +29,7 @@ Whether you're a beginner or an experienced engineer, HexTech provides the tools
 
 ## Setting Up the Hardware
 - Connect the HexTech board to your computer using the USB cable.
+      - It will show up on your computer as a serial device. (on windows it will show up as a COM) 
 - Attach any motors, switches, sensors, solenoids, or other peripherals to the appropriate pins on the HexTech board.
 
 ## Connecting power, motors, and other peripherals 
