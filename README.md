@@ -2,7 +2,7 @@
 HexTech Muscle for Rapid Product Development
 
 
-# HexTech Circuit Board User Manual
+# HexTech Muscle User Manual
 
 Welcome to the HexTech Circuit Board User Manual. This guide will help you get started with the HexTech circuit board, a versatile platform for building and automating various projects.
 
