@@ -41,11 +41,7 @@ Whether you're a beginner or an experienced engineer, HexTech provides the tools
 
    
 3. Tighten the screw securely with the screwdriver.
-<img width="716" alt="Screenshot 2024-08-07 at 5 03 28 PM" src="https://github.com/user-attachments/assets/6ba285aa-70d6-41f7-ba75-6c86ec2e517c">
-
-![Uploading Screenshot 2024-08-07 at 5.03.44 PM.png…]()
-
-
+<img width="936" alt="Screenshot 2024-08-07 at 5 03 44 PM" src="https://github.com/user-attachments/assets/caea1f95-9685-4213-b72c-a8fe669fc9b4">
 
 ## Installation
 To use the HexTech board with Python, you need to set up the HexTech library. Follow these steps:
