@@ -26,6 +26,7 @@ Whether you're a beginner or an experienced engineer, HexTech provides the tools
   - HexTech circuit board (provided)
   - Power supply (provided)
   - Power cables (provided)
+  - 2.5mm tip width flat head screwdriver (provided)
 - Motors (stepper, DC, BLDC), switches, sensors, solenoids, and other peripherals as needed
 
 ## Installation
