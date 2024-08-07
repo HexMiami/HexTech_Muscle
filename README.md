@@ -33,13 +33,17 @@ Whether you're a beginner or an experienced engineer, HexTech provides the tools
 ## Connecting power, motors, and other peripherals 
 
 1. Use the provided 2.4 mm tip screwdriver to loosen the screw.
+<img width="989" alt="Screenshot 2024-08-07 at 5 04 00 PM" src="https://github.com/user-attachments/assets/6673893f-e947-4e89-b78c-68231dbdbaac">
 
   
 2. Insert the cable into the terminal block.
+<img width="773" alt="Screenshot 2024-08-07 at 5 04 21 PM" src="https://github.com/user-attachments/assets/90e4dd46-ba35-4ed1-9b68-81141cb68c72">
 
    
 3. Tighten the screw securely with the screwdriver.
+<img width="716" alt="Screenshot 2024-08-07 at 5 03 28 PM" src="https://github.com/user-attachments/assets/6ba285aa-70d6-41f7-ba75-6c86ec2e517c">
 
+![Uploading Screenshot 2024-08-07 at 5.03.44 PM.png…]()
 
 
 
