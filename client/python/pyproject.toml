@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "hextech-muscle"
+version = "0.1.0"
+description = "Hextronics HexTech Muscle serial control library"
+authors = [
+	"Corey Matyas <corey@hextronics.com>",
+	"Justin Ebanks <justinebanks580@gmail.com>"
+]
+license = "BSD-2-Clause"
+readme = "README.md"
+classifiers = [
+	"License :: OSI Approved :: BSD License",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://github.com/HexMiami/HexTech_Muscle"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyserial = "^3.5"
+
+[tool.poetry.scripts]
+hextech = "hextech_muscle.__main__:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
