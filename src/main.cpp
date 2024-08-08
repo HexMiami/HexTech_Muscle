@@ -7,6 +7,7 @@
 #include "HexFF/PinFlasherDriver.h"
 #include "HexFF/SPIDriver.h"
 #include "HexFF/VoltageDriver.h"
+#include "HexFF/PinOutputDriver.h"
 
 #include "HexFF/TCA9535Driver.h"
 

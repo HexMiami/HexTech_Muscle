@@ -278,6 +278,61 @@
         "decel_time": 10,
         "reversed_dir": true
       }
+    },
+    {
+      "name": "mosfet.0",
+      "type": "POutAnalog",
+      "settings": {
+        "pin": 8,
+        "off_value": 0,
+        "on_value": 1023,
+        "frequency": 10000,
+        "resolution": 10
+      }
+    },
+    {
+      "name": "mosfet.1",
+      "type": "POutAnalog",
+      "settings": {
+        "pin": 47,
+        "off_value": 0,
+        "on_value": 511,
+        "frequency": 10000,
+        "resolution": 10
+      }
+    },
+    {
+      "name": "mosfet.2",
+      "type": "POutAnalog",
+      "settings": {
+        "pin": 48,
+        "off_value": 0,
+        "on_value": 511,
+        "frequency": 10000,
+        "resolution": 10
+      }
+    },
+    {
+      "name": "pwm.0",
+      "type": "POutAnalog",
+      "settings": {
+        "pin": 11,
+        "off_value": 255,
+        "on_value": 0,
+        "frequency": 10000,
+        "resolution": 8
+      }
+    },
+    {
+      "name": "pwm.1",
+      "type": "POutAnalog",
+      "settings": {
+        "pin": 4,
+        "off_value": 255,
+        "on_value": 0,
+        "frequency": 10000,
+        "resolution": 8
+      }
     }
   ]
 }
