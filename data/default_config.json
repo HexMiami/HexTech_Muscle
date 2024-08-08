@@ -1,4 +1,15 @@
 {
   "drivers": [
+    {
+      "name": "i2c-master",
+      "type": "I2CMaster",
+      "subscribe": false,
+      "settings": {
+        "bus_id": 0,
+        "sda_pin": 2,
+        "scl_pin": 1,
+        "frequency": 400000
+      }
+    }
   ]
 }
