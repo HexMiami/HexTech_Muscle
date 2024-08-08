@@ -4,6 +4,7 @@
 
 // Drivers required by firmware
 #include "HexFF/I2CMasterDriver.h"
+#include "HexFF/VoltageDriver.h"
 
 HexFF::Board board;
 
