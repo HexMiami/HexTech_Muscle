@@ -1,5 +1,11 @@
 #include <Arduino.h>
 
+#include "HexFF/Board.h"
+
+// Drivers required by firmware
+
+HexFF::Board board;
+
 void init(void*);
 __attribute__((noreturn)) void refresh(void*);
 __attribute__((noreturn)) void runSteppers(void*);
@@ -44,16 +50,26 @@ void loop() {
 //=======
 
 void init(void*) {
+  if (!board.load("/default_config.json") || !board.init()) {
+    log_e("Firmware loading/initializing failed!");
+    esp_restart();
+  }
+
   vTaskDelete(nullptr);
 }
 
 //=======
 
 __attribute__((noreturn)) void refresh(void*) {
+  do {
+    delay(300);
+  } while (!board.initialized);
+
   log_i("Refresh task started.");
   try {
     for (;;) {
       // Actions
+      board.refresh();
     }
   } catch (std::exception& e) {
     log_e("%s", e.what());

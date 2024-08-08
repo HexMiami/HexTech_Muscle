@@ -1,0 +1,36 @@
+{
+    "name": "HexFF-Core",
+    "version": "1.2.0",
+    "description": "A firmware programming model for Hextronics boards",
+    "keywords": "plugin, firmware",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/Hextronics-LLC/HexFF-Core.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Roberto Carlos Toledano",
+        "email": "rctg82@gmail.com",
+        "maintainer": true
+      },
+      {
+        "name": "Dustin Cobas",
+        "email": "dustin.cobas@gmail.com",
+        "maintainer": true
+      }
+    ],
+    "license": "MIT",
+    "dependencies": {
+      "etlcpp/Embedded Template Library":"^20.37.0",
+      "powerbroker2/SafeString":"^4.1.27",
+      "bblanchon/ArduinoJson":"^7.1.0",
+      "SPI":"^2.0.0",
+      "FS": "^2.0.0",
+      "LittleFS": "^2.0.0",
+      "Wire": "^2.0.0"
+    },
+    "frameworks": "*",
+    "platforms": "*"
+  }
