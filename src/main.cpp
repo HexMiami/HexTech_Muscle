@@ -5,6 +5,7 @@
 // Drivers required by firmware
 #include "HexFF/I2CMasterDriver.h"
 #include "HexFF/PinFlasherDriver.h"
+#include "HexFF/SPIDriver.h"
 #include "HexFF/VoltageDriver.h"
 
 #include "HexFF/TCA9535Driver.h"
