@@ -10,6 +10,9 @@
 
 #include "HexFF/TCA9535Driver.h"
 
+#include "HexFF/StepperDriver.h"
+#include "HexFF/StepperRunnerDriver.h"
+
 HexFF::Board board;
 
 void init(void*);
@@ -88,8 +91,14 @@ __attribute__((noreturn)) void refresh(void*) {
 //=======
 
 __attribute__((noreturn)) void runSteppers(void*) {
+  do {
+    delay(300);
+  } while (!board.initialized);
+
+  auto stepperRunner = HexFF::HexResources::driverIndex.at("stepper-runner");
   log_i("Stepper runner task started.");
   for (;;) {
     // Actions
+    stepperRunner->refresh();
   }
 }

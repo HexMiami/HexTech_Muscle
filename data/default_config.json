@@ -148,6 +148,74 @@
         "tca9535_driver": "tca9535.1",
         "pin": 6
       }
+    },
+    {
+      "name": "spi.stp",
+      "type": "SPI",
+      "subscribe": false,
+      "settings": {
+        "clk": 21,
+        "miso": 6,
+        "mosi": 7,
+        "frequency": 2000000
+      }
+    },
+    {
+      "name": "stepper.0",
+      "type": "StepperMotor",
+      "settings": {
+        "spi_driver": "spi.stp",
+        "tca9535_driver": "tca9535.1",
+        "pin_dir": 0,
+        "pin_step": 13,
+        "pin_cs": 11
+      }
+    },
+    {
+      "name": "stepper.1",
+      "type": "StepperMotor",
+      "settings": {
+        "spi_driver": "spi.stp",
+        "tca9535_driver": "tca9535.1",
+        "pin_dir": 1,
+        "pin_step": 14,
+        "pin_cs": 10
+      }
+    },
+    {
+      "name": "stepper.2",
+      "type": "StepperMotor",
+      "settings": {
+        "spi_driver": "spi.stp",
+        "tca9535_driver": "tca9535.1",
+        "pin_dir": 2,
+        "pin_step": 15,
+        "pin_cs": 9
+      }
+    },
+    {
+      "name": "stepper.3",
+      "type": "StepperMotor",
+      "settings": {
+        "spi_driver": "spi.stp",
+        "tca9535_driver": "tca9535.1",
+        "pin_dir": 3,
+        "pin_step": 16,
+        "pin_cs": 8
+      }
+    },
+    {
+      "name": "stepper-runner",
+      "type": "StepperMotorRunner",
+      "subscribe": false,
+      "settings": {
+        "stepper_drivers": [
+          "stepper.0",
+          "stepper.1",
+          "stepper.2",
+          "stepper.3"
+        ]
+      }
     }
   ]
 }
