@@ -1,0 +1,22 @@
+{
+  "name": "HexFF-D-Motor",
+  "version": "1.0.0",
+  "description": "A firmware programming model for Hextronics boards",
+  "keywords": "plugin, firmware",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HexMiami/HexFF-D-Stepper.git"
+  },
+  "authors": [
+    {
+      "name": "Dustin Cobas",
+      "email": "dustin.cobas@gmail.com",
+      "maintainer": true
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+  },
+  "frameworks": "*",
+  "platforms": "*"
+}

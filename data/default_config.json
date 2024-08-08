@@ -1,0 +1,338 @@
+{
+  "drivers": [
+    {
+      "name": "i2c-master",
+      "type": "I2CMaster",
+      "subscribe": false,
+      "settings": {
+        "bus_id": 0,
+        "sda_pin": 2,
+        "scl_pin": 1,
+        "frequency": 400000
+      }
+    },
+    {
+      "name": "volt",
+      "type": "Voltage",
+      "subscribe": false,
+      "settings": {
+        "pin": 5,
+        "ratio": 0.025
+      }
+    },
+    {
+      "name": "led.bl",
+      "type": "PFlasher",
+      "settings": {
+        "pin": 40
+      }
+    },
+    {
+      "name": "led.wh",
+      "type": "PFlasher",
+      "settings": {
+        "pin": 41
+      }
+    },
+    {
+      "name": "led.yl",
+      "type": "PFlasher",
+      "settings": {
+        "pin": 42
+      }
+    },
+    {
+      "name": "tca9535.00",
+      "type": "TCA9535",
+      "subscribe": false,
+      "settings": {
+        "i2c_driver": "i2c-master",
+        "i2c_addr": 32
+      }
+    },
+    {
+      "name": "sw.00",
+      "type": "PInTCA9535",
+      "settings": {
+        "tca9535_driver": "tca9535.00",
+        "pin": 0
+      }
+    },
+    {
+      "name": "sw.01",
+      "type": "PInTCA9535",
+      "settings": {
+        "tca9535_driver": "tca9535.00",
+        "pin": 1
+      }
+    },
+    {
+      "name": "sw.02",
+      "type": "PInTCA9535",
+      "settings": {
+        "tca9535_driver": "tca9535.00",
+        "pin": 2
+      }
+    },
+    {
+      "name": "sw.03",
+      "type": "PInTCA9535",
+      "settings": {
+        "tca9535_driver": "tca9535.00",
+        "pin": 3
+      }
+    },
+    {
+      "name": "sw.04",
+      "type": "PInTCA9535",
+      "settings": {
+        "tca9535_driver": "tca9535.00",
+        "pin": 4
+      }
+    },
+    {
+      "name": "sw.05",
+      "type": "PInTCA9535",
+      "settings": {
+        "tca9535_driver": "tca9535.00",
+        "pin": 5
+      }
+    },
+    {
+      "name": "sw.06",
+      "type": "PInTCA9535",
+      "settings": {
+        "tca9535_driver": "tca9535.00",
+        "pin": 6
+      }
+    },
+    {
+      "name": "sw.07",
+      "type": "PInTCA9535",
+      "settings": {
+        "tca9535_driver": "tca9535.00",
+        "pin": 7
+      }
+    },
+    {
+      "name": "tca9535.01",
+      "type": "TCA9535",
+      "subscribe": false,
+      "settings": {
+        "i2c_driver": "i2c-master",
+        "i2c_addr": 33,
+        "pins": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "8": 1,
+          "9": 1,
+          "10": 1,
+          "11": 1
+        }
+      }
+    },
+    {
+      "name": "led.am",
+      "type": "POutTCA9535",
+      "settings": {
+        "tca9535_driver": "tca9535.01",
+        "pin": 5
+      }
+    },
+    {
+      "name": "led.rd",
+      "type": "POutTCA9535",
+      "settings": {
+        "tca9535_driver": "tca9535.01",
+        "pin": 6
+      }
+    },
+    {
+      "name": "spi.stp",
+      "type": "SPI",
+      "subscribe": false,
+      "settings": {
+        "clk": 21,
+        "miso": 6,
+        "mosi": 7,
+        "frequency": 2000000
+      }
+    },
+    {
+      "name": "stepper.00",
+      "type": "StepperMotor",
+      "settings": {
+        "spi_driver": "spi.stp",
+        "tca9535_driver": "tca9535.01",
+        "pin_dir": 0,
+        "pin_step": 13,
+        "pin_cs": 11
+      }
+    },
+    {
+      "name": "stepper.01",
+      "type": "StepperMotor",
+      "settings": {
+        "spi_driver": "spi.stp",
+        "tca9535_driver": "tca9535.01",
+        "pin_dir": 1,
+        "pin_step": 14,
+        "pin_cs": 10
+      }
+    },
+    {
+      "name": "stepper.02",
+      "type": "StepperMotor",
+      "settings": {
+        "spi_driver": "spi.stp",
+        "tca9535_driver": "tca9535.01",
+        "pin_dir": 2,
+        "pin_step": 15,
+        "pin_cs": 9
+      }
+    },
+    {
+      "name": "stepper.03",
+      "type": "StepperMotor",
+      "settings": {
+        "spi_driver": "spi.stp",
+        "tca9535_driver": "tca9535.01",
+        "pin_dir": 3,
+        "pin_step": 16,
+        "pin_cs": 8
+      }
+    },
+    {
+      "name": "stepper-runner",
+      "type": "StepperMotorRunner",
+      "subscribe": false,
+      "settings": {
+        "stepper_drivers": [
+          "stepper.00",
+          "stepper.01",
+          "stepper.02",
+          "stepper.03"
+        ]
+      }
+    },
+    {
+      "name": "po-dc-pwm",
+      "type": "POutAnalog",
+      "settings": {
+        "pin": 10,
+        "off_value": 0,
+        "on_value": 255,
+        "frequency": 10000,
+        "resolution": 8
+      }
+    },
+    {
+      "name": "po-dc-dir",
+      "type": "POutTCA9535",
+      "settings": {
+        "tca9535_driver": "tca9535.01",
+        "pin": 13
+      }
+    },
+    {
+      "name": "dc.00",
+      "type": "DCMotor",
+      "settings": {
+        "pin_pwm_driver": "po-dc-pwm",
+        "pin_dir_driver": "po-dc-dir",
+        "max_speed": 100,
+        "accel_time": 50,
+        "decel_time": 100,
+        "reversed_dir": false
+      }
+    },
+    {
+      "name": "po-bldc-pwm",
+      "type": "POutAnalog",
+      "settings": {
+        "pin": 35,
+        "off_value": 0,
+        "on_value": 255,
+        "frequency": 10000,
+        "resolution": 8
+      }
+    },
+    {
+      "name": "po-bldc-dir",
+      "type": "POutTCA9535",
+      "settings": {
+        "tca9535_driver": "tca9535.01",
+        "pin": 14
+      }
+    },
+    {
+      "name": "bldc.00",
+      "type": "DCMotor",
+      "settings": {
+        "pin_pwm_driver": "po-bldc-pwm",
+        "pin_dir_driver": "po-bldc-dir",
+        "max_speed": 100,
+        "accel_time": 10,
+        "decel_time": 10,
+        "reversed_dir": true
+      }
+    },
+    {
+      "name": "mosfet.00",
+      "type": "POutAnalog",
+      "settings": {
+        "pin": 8,
+        "off_value": 0,
+        "on_value": 1023,
+        "frequency": 10000,
+        "resolution": 10
+      }
+    },
+    {
+      "name": "mosfet.01",
+      "type": "POutAnalog",
+      "settings": {
+        "pin": 47,
+        "off_value": 0,
+        "on_value": 511,
+        "frequency": 10000,
+        "resolution": 10
+      }
+    },
+    {
+      "name": "mosfet.02",
+      "type": "POutAnalog",
+      "settings": {
+        "pin": 48,
+        "off_value": 0,
+        "on_value": 511,
+        "frequency": 10000,
+        "resolution": 10
+      }
+    },
+    {
+      "name": "pwm.00",
+      "type": "POutAnalog",
+      "settings": {
+        "pin": 11,
+        "off_value": 255,
+        "on_value": 0,
+        "frequency": 10000,
+        "resolution": 8
+      }
+    },
+    {
+      "name": "pwm.01",
+      "type": "POutAnalog",
+      "settings": {
+        "pin": 4,
+        "off_value": 255,
+        "on_value": 0,
+        "frequency": 10000,
+        "resolution": 8
+      }
+    }
+  ]
+}

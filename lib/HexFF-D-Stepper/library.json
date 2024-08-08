@@ -1,0 +1,19 @@
+{
+  "name": "HexFF-D-Stepper",
+  "version": "1.0.0",
+  "description": "A firmware programming model for Hextronics boards",
+  "keywords": "plugin, firmware",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HexMiami/HexFF-D-Stepper.git"
+  },
+  "authors": [
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "waspinator/AccelStepper": "^1.64",
+    "teemuatlut/TMCStepper": "^0.7.3"
+  },
+  "frameworks": "*",
+  "platforms": "*"
+}
