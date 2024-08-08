@@ -216,6 +216,68 @@
           "stepper.3"
         ]
       }
+    },
+    {
+      "name": "po-dc-pwm",
+      "type": "POutAnalog",
+      "settings": {
+        "pin": 10,
+        "off_value": 0,
+        "on_value": 255,
+        "frequency": 10000,
+        "resolution": 8
+      }
+    },
+    {
+      "name": "po-dc-dir",
+      "type": "POutTCA9535",
+      "settings": {
+        "tca9535_driver": "tca9535.1",
+        "pin": 13
+      }
+    },
+    {
+      "name": "dc",
+      "type": "DCMotor",
+      "settings": {
+        "pin_pwm_driver": "po-dc-pwm",
+        "pin_dir_driver": "po-dc-dir",
+        "max_speed": 100,
+        "accel_time": 50,
+        "decel_time": 100,
+        "reversed_dir": false
+      }
+    },
+    {
+      "name": "po-bldc-pwm",
+      "type": "POutAnalog",
+      "settings": {
+        "pin": 35,
+        "off_value": 0,
+        "on_value": 255,
+        "frequency": 10000,
+        "resolution": 8
+      }
+    },
+    {
+      "name": "po-bldc-dir",
+      "type": "POutTCA9535",
+      "settings": {
+        "tca9535_driver": "tca9535.1",
+        "pin": 14
+      }
+    },
+    {
+      "name": "bldc",
+      "type": "DCMotor",
+      "settings": {
+        "pin_pwm_driver": "po-bldc-pwm",
+        "pin_dir_driver": "po-bldc-dir",
+        "max_speed": 100,
+        "accel_time": 10,
+        "decel_time": 10,
+        "reversed_dir": true
+      }
     }
   ]
 }

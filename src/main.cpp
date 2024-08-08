@@ -13,6 +13,8 @@
 #include "HexFF/StepperDriver.h"
 #include "HexFF/StepperRunnerDriver.h"
 
+#include "HexFF/MotorDriver.h"
+
 HexFF::Board board;
 
 void init(void*);
