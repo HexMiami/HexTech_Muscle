@@ -179,6 +179,7 @@ Develop an automatic pencil sharpener that sharpens pencils to a perfect point e
 [HexTechAutomaticPencilSharpener Repository](https://github.com/FRatmiroff/HexTechAutomaticPencilSharpener)
 
 ### Robotic Arm
+Create a Pamphlet Dispensing SCARA Robot Arm Using HexTech
 [HexTechRobotArm Repository](https://github.com/FRatmiroff/HexTechRobotArm)
 
 ### Crate Mover
@@ -186,8 +187,8 @@ Create a crate on wheels.
 [HexTechMover Repository](https://github.com/justinebanks/HexTechMover)
 
 ### CNC Machine
-
-
+Automate writing tasks with precision and efficiency.
+[Writing Machine Repository](https://github.com/aknoepffler25/Writing-Machine)
 
 ### Smart Home Automation
 
