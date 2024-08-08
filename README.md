@@ -166,14 +166,28 @@ The HexTech board can control three MOSFETs. Here are some basic commands:
 ### Automatic Cat Feeder
 
 Build an automatic cat feeder that dispenses food at scheduled times using the HexTech board to control a stepper motor.
+[Automatic Cat Feeder Repository](https://github.com/andrea-lk/automatic-catfeeder)
 
 ### Automatic Wire Stripper
 
 Create an automatic wire stripper that can precisely strip insulation from wires of various sizes using the HexTech board to control the necessary motors and sensors.
+[HexTechWireStripper Repository](https://github.com/justinebanks/HexTechWireStripper)
 
 ### Automatic Pencil Sharpener
 
 Develop an automatic pencil sharpener that sharpens pencils to a perfect point every time using the HexTech board to control the motors and sensors.
+[HexTechAutomaticPencilSharpener Repository](https://github.com/FRatmiroff/HexTechAutomaticPencilSharpener)
+
+### Robotic Arm
+[HexTechRobotArm Repository](https://github.com/FRatmiroff/HexTechRobotArm)
+
+### Crate Mover
+Create a crate on wheels. 
+[HexTechMover Repository](https://github.com/justinebanks/HexTechMover)
+
+### CNC Machine
+
+
 
 ### Smart Home Automation
 
