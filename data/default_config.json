@@ -42,7 +42,7 @@
       }
     },
     {
-      "name": "tca9535.0",
+      "name": "tca9535.00",
       "type": "TCA9535",
       "subscribe": false,
       "settings": {
@@ -51,71 +51,71 @@
       }
     },
     {
-      "name": "sw.0",
+      "name": "sw.00",
       "type": "PInTCA9535",
       "settings": {
-        "tca9535_driver": "tca9535.0",
+        "tca9535_driver": "tca9535.00",
         "pin": 0
       }
     },
     {
-      "name": "sw.1",
+      "name": "sw.01",
       "type": "PInTCA9535",
       "settings": {
-        "tca9535_driver": "tca9535.0",
+        "tca9535_driver": "tca9535.00",
         "pin": 1
       }
     },
     {
-      "name": "sw.2",
+      "name": "sw.02",
       "type": "PInTCA9535",
       "settings": {
-        "tca9535_driver": "tca9535.0",
+        "tca9535_driver": "tca9535.00",
         "pin": 2
       }
     },
     {
-      "name": "sw.3",
+      "name": "sw.03",
       "type": "PInTCA9535",
       "settings": {
-        "tca9535_driver": "tca9535.0",
+        "tca9535_driver": "tca9535.00",
         "pin": 3
       }
     },
     {
-      "name": "sw.4",
+      "name": "sw.04",
       "type": "PInTCA9535",
       "settings": {
-        "tca9535_driver": "tca9535.0",
+        "tca9535_driver": "tca9535.00",
         "pin": 4
       }
     },
     {
-      "name": "sw.5",
+      "name": "sw.05",
       "type": "PInTCA9535",
       "settings": {
-        "tca9535_driver": "tca9535.0",
+        "tca9535_driver": "tca9535.00",
         "pin": 5
       }
     },
     {
-      "name": "sw.6",
+      "name": "sw.06",
       "type": "PInTCA9535",
       "settings": {
-        "tca9535_driver": "tca9535.0",
+        "tca9535_driver": "tca9535.00",
         "pin": 6
       }
     },
     {
-      "name": "sw.7",
+      "name": "sw.07",
       "type": "PInTCA9535",
       "settings": {
-        "tca9535_driver": "tca9535.0",
+        "tca9535_driver": "tca9535.00",
         "pin": 7
       }
     },
     {
-      "name": "tca9535.1",
+      "name": "tca9535.01",
       "type": "TCA9535",
       "subscribe": false,
       "settings": {
@@ -137,7 +137,7 @@
       "name": "led.am",
       "type": "POutTCA9535",
       "settings": {
-        "tca9535_driver": "tca9535.1",
+        "tca9535_driver": "tca9535.01",
         "pin": 5
       }
     },
@@ -145,7 +145,7 @@
       "name": "led.rd",
       "type": "POutTCA9535",
       "settings": {
-        "tca9535_driver": "tca9535.1",
+        "tca9535_driver": "tca9535.01",
         "pin": 6
       }
     },
@@ -161,44 +161,44 @@
       }
     },
     {
-      "name": "stepper.0",
+      "name": "stepper.00",
       "type": "StepperMotor",
       "settings": {
         "spi_driver": "spi.stp",
-        "tca9535_driver": "tca9535.1",
+        "tca9535_driver": "tca9535.01",
         "pin_dir": 0,
         "pin_step": 13,
         "pin_cs": 11
       }
     },
     {
-      "name": "stepper.1",
+      "name": "stepper.01",
       "type": "StepperMotor",
       "settings": {
         "spi_driver": "spi.stp",
-        "tca9535_driver": "tca9535.1",
+        "tca9535_driver": "tca9535.01",
         "pin_dir": 1,
         "pin_step": 14,
         "pin_cs": 10
       }
     },
     {
-      "name": "stepper.2",
+      "name": "stepper.02",
       "type": "StepperMotor",
       "settings": {
         "spi_driver": "spi.stp",
-        "tca9535_driver": "tca9535.1",
+        "tca9535_driver": "tca9535.01",
         "pin_dir": 2,
         "pin_step": 15,
         "pin_cs": 9
       }
     },
     {
-      "name": "stepper.3",
+      "name": "stepper.03",
       "type": "StepperMotor",
       "settings": {
         "spi_driver": "spi.stp",
-        "tca9535_driver": "tca9535.1",
+        "tca9535_driver": "tca9535.01",
         "pin_dir": 3,
         "pin_step": 16,
         "pin_cs": 8
@@ -210,10 +210,10 @@
       "subscribe": false,
       "settings": {
         "stepper_drivers": [
-          "stepper.0",
-          "stepper.1",
-          "stepper.2",
-          "stepper.3"
+          "stepper.00",
+          "stepper.01",
+          "stepper.02",
+          "stepper.03"
         ]
       }
     },
@@ -232,12 +232,12 @@
       "name": "po-dc-dir",
       "type": "POutTCA9535",
       "settings": {
-        "tca9535_driver": "tca9535.1",
+        "tca9535_driver": "tca9535.01",
         "pin": 13
       }
     },
     {
-      "name": "dc",
+      "name": "dc.00",
       "type": "DCMotor",
       "settings": {
         "pin_pwm_driver": "po-dc-pwm",
@@ -263,12 +263,12 @@
       "name": "po-bldc-dir",
       "type": "POutTCA9535",
       "settings": {
-        "tca9535_driver": "tca9535.1",
+        "tca9535_driver": "tca9535.01",
         "pin": 14
       }
     },
     {
-      "name": "bldc",
+      "name": "bldc.00",
       "type": "DCMotor",
       "settings": {
         "pin_pwm_driver": "po-bldc-pwm",
@@ -280,7 +280,7 @@
       }
     },
     {
-      "name": "mosfet.0",
+      "name": "mosfet.00",
       "type": "POutAnalog",
       "settings": {
         "pin": 8,
@@ -291,7 +291,7 @@
       }
     },
     {
-      "name": "mosfet.1",
+      "name": "mosfet.01",
       "type": "POutAnalog",
       "settings": {
         "pin": 47,
@@ -302,7 +302,7 @@
       }
     },
     {
-      "name": "mosfet.2",
+      "name": "mosfet.02",
       "type": "POutAnalog",
       "settings": {
         "pin": 48,
@@ -313,7 +313,7 @@
       }
     },
     {
-      "name": "pwm.0",
+      "name": "pwm.00",
       "type": "POutAnalog",
       "settings": {
         "pin": 11,
@@ -324,7 +324,7 @@
       }
     },
     {
-      "name": "pwm.1",
+      "name": "pwm.01",
       "type": "POutAnalog",
       "settings": {
         "pin": 4,
